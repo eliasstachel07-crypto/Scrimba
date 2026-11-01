@@ -1,0 +1,101 @@
+SCRIMBA AUF EINEM ANDEREN WINDOWS-PC
+=================================
+
+Dieses Paket enthält den gespeicherten Stand deiner Übungen vom 1. November 2026,
+deine Arbeitsbereichsdatei und ein importierbares VS-Code-Profil mit der F5-Regel.
+Die Dateien unter Passenger-Counter und Strings sowie die Arbeitsbereichsdatei
+wurden unverändert kopiert und durch Prüfsummen mit den Originalen verglichen.
+
+Das gewünschte Ergebnis:
+Code links, Integrated Browser rechts und Debug Console unten.
+
+EINMALIG EINRICHTEN
+
+1. Installiere oder öffne Visual Studio Code Desktop für Windows.
+   Download: https://code.visualstudio.com/download
+   Auf Elias' PC wurde das Setup mit VS Code 1.144.0 getestet. Für eine möglichst
+   genaue Wiederholung verwende dieselbe Version. Eine neuere Version benötigt
+   ebenfalls den Integrated Browser mit dem Debug-Typ editor-browser.
+   Die installierte Version steht unter Help/Hilfe > About/Info.
+
+2. Übertrage die ZIP-Datei zum Beispiel mit einem USB-Stick. Rechtsklick auf die
+   ZIP-Datei > Alle extrahieren. Öffne die Übungen anschließend aus dem entpackten
+   Ordner Scrimba-Lernen. Behalte diesen Ordnernamen bei: Die F5-Regel gilt für
+   Dateien, deren Pfad "Scrimba" enthält.
+   Ein passender Ort ist zum Beispiel Dokumente\Scrimba-Lernen.
+
+3. Öffne in VS Code über File/Datei > Open Workspace from File/Arbeitsbereich aus
+   Datei öffnen die Datei Scrimba-Lernen.code-workspace im entpackten Ordner.
+
+4. Importiere das mitgelieferte Profil:
+   - F1 drücken und "Preferences: Open Profiles (UI)" suchen/ausführen.
+     Alternativ: Zahnrad unten links > Profiles/Profile.
+   - Den kleinen Pfeil neben "New Profile/Neues Profil" anklicken.
+   - "Import Profile.../Profil importieren..." wählen, dann eine lokale Datei.
+   - Einrichtung\Scrimba-Lernen.code-profile aus dem entpackten Ordner auswählen.
+   - Den Namen Scrimba-Lernen beibehalten und mit Create/Erstellen importieren.
+   - Das Profil Scrimba-Lernen für diesen Arbeitsbereich aktivieren. Dafür bei
+     Bedarf das Zahnrad > Profiles/Profile öffnen und Scrimba-Lernen auswählen.
+
+   Das Profil bringt die Kurs-Einstellungen, die F5-Tastenkombination und den
+   Verweis auf Live Preview 0.4.20 mit. Zum Herunterladen der Erweiterung wird
+   Internet benötigt. Der eigentliche F5-Browser-Debugger ist in VS Code eingebaut.
+   Mit dem eigenen Profil bleiben die normalen Einstellungen deiner Freundin in
+   ihrem bisherigen Profil erhalten. Ein Microsoft- oder GitHub-Konto ist für die
+   lokale Profil-Datei und deine lokalen Übungen nicht erforderlich.
+
+5. Strg+Umschalt+D drücken. Oben als Startkonfiguration
+   "Scrimba: Aktuelle Uebung starten" auswählen.
+   Anschließend Passenger-Counter\index.js oder index.html links öffnen und F5
+   drücken. Der Browser sollte automatisch rechts erscheinen.
+   Manche Laptops benötigen dafür Fn+F5.
+
+KURZ TESTEN
+
+- Rechts in der Webseite INCREMENT und dann SAVE anklicken.
+- Unten in Debug Console sollte die Zahl 1 mit dem Verweis index.js:11 erscheinen.
+- Falls die Konsole ausgeblendet ist: Strg+Umschalt+Y drücken.
+- Mit Umschalt+F5 beenden. Strings\index.html öffnen und F5 drücken.
+  Damit prüfst du den Wechsel zur zweiten Übung.
+
+NEUE ÜBUNG STARTEN
+
+1. Laufende Übung mit Umschalt+F5 beenden.
+2. Links die HTML- oder JavaScript-Datei der nächsten Übung öffnen.
+3. Strg+S und F5 drücken.
+
+Neue Übungsordner im Arbeitsbereich brauchen jeweils eine index.html, die das
+zugehörige JavaScript lädt. Beim Start aus einer JS-Datei muss die index.html im
+selben Ordner liegen. Die F5-Regel startet den Browser, verschiebt ihn nach rechts,
+reserviert diese Gruppe für den Browser und setzt den Fokus wieder nach links.
+
+FALLS F5 DEN BROWSER NICHT RECHTS ÖFFNET
+
+- Prüfen, ob das Profil Scrimba-Lernen aktiv ist.
+- Prüfen, ob "Scrimba" im entpackten Ordnerpfad vorkommt.
+- Prüfen, ob "Scrimba: Aktuelle Uebung starten" ausgewählt ist.
+- Vor F5 eine Übungsdatei links öffnen; eine laufende Sitzung erst beenden.
+- Browser-Debugging benötigt VS Code Desktop mit editor-browser-Unterstützung.
+
+Falls du kein separates Profil verwenden möchtest, steht die F5-Regel zusätzlich
+in Einrichtung\F5-Tastenkombination.jsonc. Über F1 > Preferences: Open Keyboard
+Shortcuts (JSON) kannst du das Objekt aus dieser Datei in die vorhandene Liste
+einfügen. Vorhandene Tastenkombinationen dabei erhalten; die komplette Datei nur
+übernehmen, wenn die Liste bisher leer ist. Der Profilimport oben ist einfacher.
+
+WAS DIESES PAKET NICHT AUTOMATISCH MACHT
+
+Es ist eine Momentaufnahme der gespeicherten Dateien. Änderungen, die du später
+an einem PC machst, erscheinen nicht automatisch am anderen PC. Übertrage dafür
+den aktualisierten Übungsordner erneut. Vermeide parallele Änderungen an derselben
+Datei auf beiden PCs; kopiere vor dem Wechsel jeweils den neuesten Stand.
+
+Der andere PC wurde von hier aus nicht eingerichtet oder getestet. Die fertige
+Profil-Datei wurde auf das Importformat der hier installierten VS-Code-Version
+geprüft; der Funktionstest oben bestätigt die Einrichtung auf dem zweiten PC.
+
+OFFIZIELLE ANLEITUNGEN
+
+Profilimport: https://code.visualstudio.com/docs/configure/profiles
+Integrated Browser: https://code.visualstudio.com/docs/debugtest/integrated-browser
+Tastenkombinationen: https://code.visualstudio.com/docs/configure/keybindings

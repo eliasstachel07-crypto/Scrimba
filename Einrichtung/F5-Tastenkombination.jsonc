@@ -1,0 +1,16 @@
+// F5: Scrimba im Integrated Browser rechts starten.
+[
+    {
+        "key": "f5",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.debug.start",
+                "workbench.action.moveEditorToRightGroup",
+                "workbench.action.lockEditorGroup",
+                "workbench.action.focusFirstEditorGroup"
+            ]
+        },
+        "when": "!inDebugMode && resourcePath =~ /Scrimba/i"
+    }
+]
