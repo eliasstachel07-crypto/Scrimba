@@ -1,0 +1,45 @@
+{
+    "folders": [
+        {
+            "name": "Scrimba",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 700,
+        "livePreview.useIntegratedBrowser": true,
+        "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+        "livePreview.openPreviewTarget": "Embedded Preview",
+        "livePreview.hostIP": "127.0.0.1",
+        "livePreview.defaultPreviewPath": "index.html",
+        "workbench.browser.newTabPlacement": "sideGroup",
+        "workbench.panel.defaultLocation": "bottom",
+        "javascript.validate.enable": true
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-vscode.live-server"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Scrimba: Aktuelle Uebung starten",
+                "type": "editor-browser",
+                "request": "launch",
+                "url": "file:///${fileDirname}/index.html",
+                "webRoot": "${fileDirname}",
+                "outputCapture": "console",
+                "internalConsoleOptions": "openOnSessionStart"
+            },
+            {
+                "name": "Scrimba: Konsole zur Vorschau oeffnen",
+                "type": "editor-browser",
+                "request": "attach",
+                "internalConsoleOptions": "openOnSessionStart"
+            }
+        ]
+    }
+}
